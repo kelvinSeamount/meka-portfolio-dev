@@ -1,0 +1,80 @@
+*:root {
+  --primary-background: #1e1e1e;
+  --secondary-background: #61dafb;
+
+  /*=======Container-Variables====*/
+  --lg-container-width: 80%;
+  --md-container-width: 90%;
+  --sm-container-width: 94%;
+}
+
+/*=======General-Reset====*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+/*=======Reusable Component====*/
+.container {
+  width: var(--lg-container-width);
+  margin: 0 auto;
+}
+
+/*=======Nav-Component====*/
+nav {
+  width: 100vw;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background: var(--primary-background);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+button {
+  display: none;
+  border: none;
+}
+
+.icon-moon {
+  width: 1.8rem;
+}
+
+.logo-link {
+  position: relative;
+}
+
+.top-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.top-img:hover {
+  opacity: 1;
+}
