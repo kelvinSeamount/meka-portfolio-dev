@@ -12,9 +12,13 @@
   --sm-container-width: 94%;
 
   /*=======Fonts-Variables====*/
-  --fonts-major-headings:2.7rem;
-  --fonts-sub-headingss:2rem;
-  --fonts-paragraph:1.125rem
+  --fonts-major-headings: 4rem;
+  --fonts-sub-headingss: 2.5rem;
+  --fonts-sub-primary: 2rem;
+  --fonts-paragraph: 1.25rem;
+
+  /*=======Fonts-family-Variables====*/
+  --fonts-nunito: "Nunito Sans", sans-serif;
 }
 
 /*=======General-Reset====*/
@@ -29,20 +33,31 @@
 }
 
 body {
+  font-family: var(--fonts-nunito);
   background-color: var(--primary-background);
   line-height: 1.5;
   color: var(--primary-fontcolor);
 }
+
 img {
   display: block;
   object-fit: cover;
   width: 100%;
 }
 
+section {
+  padding: 4rem 0;
+}
+
 /*=======Reusable Component====*/
 .container {
   width: var(--lg-container-width);
   margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 /*=======Nav-Component====*/
@@ -122,6 +137,7 @@ button {
 .hero-text {
   width: var(--lg-container-width);
 }
+
 /*=============================IMAGE-HOVER-EFFECT===============================*/
 .hero-img {
   position: relative;
@@ -145,4 +161,69 @@ button {
 
 .hero-img:hover img.img-hero {
   opacity: 1;
+}
+
+/*=============================ABOUT=STYLE===============================*/
+
+.about {
+  background-color: var(--tertiary-background);
+  height: 80vh;
+}
+
+.about-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-header h2 {
+  font-size: var(--fonts-sub-headingss);
+  font-weight: 700;
+}
+
+.img-logo {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.img-logo:hover img {
+  opacity: 0;
+}
+
+.img-logo:hover img.logo-img {
+  opacity: 1;
+}
+
+.about-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--hover-color);
+  color: var(--main-fontcolor);
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  font-weight: 400;
+}
+
+.btn-cv:hover {
+  background-color: var(--primary-fontcolor);
+  color: var(--primary-background);
 }
