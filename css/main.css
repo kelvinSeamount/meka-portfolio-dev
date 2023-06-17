@@ -5,6 +5,8 @@
   --primary-fontcolor: #ffffff;
   --main-fontcolor: #f2f2f2;
   --hover-color: #42a5f5;
+  --tertiary-background2: rgba(117, 148, 173, 0.1);
+  --tertiary-background3: #171924;
 
   /*=======Container-Variables====*/
   --lg-container-width: 80%;
@@ -167,7 +169,7 @@ button {
 
 .about {
   background-color: var(--tertiary-background);
-  height: 80vh;
+  /*height: 80vh;*/
 }
 
 .about-header {
@@ -226,4 +228,48 @@ button {
 .btn-cv:hover {
   background-color: var(--primary-fontcolor);
   color: var(--primary-background);
+}
+
+.skills h2 {
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.skills .skills-tags {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-item img {
+  width: calc(33.33%-10px);
+  height: auto;
+}
+
+/*=============================CONTACT=STYLE===============================*/
+.contact {
+  /*background-color: var(--tertiary-background);*/
+}
+
+.container-contact {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: var(--tertiary-background3);
+  gap: 4rem;
+  border-radius: 1rem;
+  height: 30rem;
+  margin: 7rem;
+}
+
+.aside-box {
+  background-color: var(--tertiary-background2);
+  padding: 3rem;
+  position: relative;
+  border-radius: 1rem;
+  bottom: 7rem;
+}
+
+.img-aside {
+  width: 10rem;
 }
