@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!---------NAVIGATION------------>
     <nav>
@@ -31,13 +32,13 @@
           <!--<li><a href="">Projects</a></li>-->
           <li><a href="">Contact</a></li>
         </ul>
+        <img src="./asset/moon.png" alt="moon" class="icon-moon" />
         <button id="open-menu-btn">
           <ion-icon name="menu-outline"></ion-icon>
         </button>
         <button id="close-menu-btn">
           <ion-icon name="close-outline"></ion-icon>
         </button>
-        <img src="./asset/moon.png" alt="moon" class="icon-moon" />
       </div>
     </nav>
     <!---------NAVIGATION-ENDS------------>
@@ -97,7 +98,7 @@
           </div>
         </div>
         <div class="btn">
-          <a class="btn-cv btn-primary" href="">My Resume</a>
+          <a class="btn-cv" href="">My Resume</a>
         </div>
         <div class="skills">
           <h2>Tools that I use</h2>
@@ -132,7 +133,7 @@
 
     <!---------ABOUT-ME-ENDS------------>
     <!---------CONTACTS------------>
-    <section class="contact">
+    <footer class="contact">
       <div class="container">
         <div class="about-header">
           <h2>Have a project? Send me a message</h2>
@@ -179,11 +180,49 @@
               <li>
                 <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
               </li>
+              <li>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+              </li>
             </ul>
           </aside>
+
+          <form
+            class="form-contact"
+            action="https://formspree.io/f/mayzodvp"
+            method="POST"
+          >
+            <div class="form-name">
+              <input
+                type="text"
+                name="First Name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="Last Name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Your Email Address"
+              required
+            />
+
+            <textarea
+              name="Message"
+              placeholder="Message"
+              rows="7"
+              required
+            ></textarea>
+            <button type="submit" class="btn-cv">Send Message</button>
+          </form>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
   <script
     type="module"
@@ -193,4 +232,7 @@
     nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
+
+  <!---------SCRIPT------------>
+  <script src="./script/app.js"></script>
 </html>

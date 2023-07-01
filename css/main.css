@@ -5,8 +5,7 @@
   --primary-fontcolor: #ffffff;
   --main-fontcolor: #f2f2f2;
   --hover-color: #42a5f5;
-  --tertiary-background2: rgba(117, 148, 173, 0.1);
-  --tertiary-background3: #171924;
+  --Form-color: #202d47;
 
   /*=======Container-Variables====*/
   --lg-container-width: 80%;
@@ -51,6 +50,8 @@ section {
   padding: 4rem 0;
 }
 
+.btn {
+}
 /*=======Reusable Component====*/
 .container {
   width: var(--lg-container-width);
@@ -69,6 +70,11 @@ nav {
   position: fixed;
   top: 0;
   z-index: 11;
+}
+
+.window-scroll {
+  background-color: var(--tertiary-background);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -143,10 +149,11 @@ button {
 /*=============================IMAGE-HOVER-EFFECT===============================*/
 .hero-img {
   position: relative;
-  margin-top: 2rem;
-  width: var(--lg-container-width);
+  margin-block: 3rem;
+  max-width: 70%;
   display: inline-block;
   overflow: hidden;
+  margin-left: 3rem;
 }
 
 .img-hero {
@@ -168,8 +175,6 @@ button {
 /*=============================ABOUT=STYLE===============================*/
 
 .about {
-  background-color: var(--tertiary-background);
-  /*height: 80vh;*/
 }
 
 .about-header {
@@ -247,29 +252,82 @@ button {
 }
 
 /*=============================CONTACT=STYLE===============================*/
-.contact {
-  /*background-color: var(--tertiary-background);*/
+
+footer {
+  padding-top: 6rem;
 }
 
 .container-contact {
-  padding: 4rem;
+  padding: 6rem;
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: var(--tertiary-background3);
+  background-color: var(--tertiary-background);
   gap: 4rem;
   border-radius: 1rem;
   height: 30rem;
-  margin: 7rem;
+  margin: 7rem auto;
 }
 
 .aside-box {
-  background-color: var(--tertiary-background2);
+  background-color: var(--tertiary-background);
   padding: 3rem;
   position: relative;
   border-radius: 1rem;
-  bottom: 7rem;
+  bottom: 11rem;
 }
 
 .img-aside {
   width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.aside-box p {
+  font-size: var(--fonts-paragraph);
+  margin-bottom: 2rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-contact {
+  display: flex;
+  margin-top: 3rem;
+  gap: 0.7rem;
+}
+
+.social-contact li a {
+  font-size: var(--fonts-paragraph);
+  color: var(--main-fontcolor);
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form-contact input[type="text"] {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  color: var(--main-fontcolor);
+  background-color: var(--Form-color);
+}
+
+.form-contact .btn-cv {
+  width: max-content;
+  margin-top: 1rem;
 }
