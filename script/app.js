@@ -1,10 +1,12 @@
+/*---------------NAV-CHANGE-------------*/
+
 const scrollNav = document.querySelector("nav");
-
-const typeEl = document.querySelector(".type");
-
 document.addEventListener("scroll", function () {
   scrollNav.classList.toggle("window-scroll", window.scrollY > 0);
 });
+
+/*---------------TYPING-------------*/
+const typeEl = document.querySelector(".type");
 
 const words = ["Front-End", "Developer", "Based", "In", "Bremen", "Germany"];
 
@@ -31,3 +33,20 @@ const displayType = function () {
   setTimeout(displayType, 380);
 };
 displayType();
+
+/*----TO DISPLAY MENU---*/
+const menuNav = document.querySelector(".nav-menu");
+const openMenuBtn = document.querySelector("#open-menu-btn");
+const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+openMenuBtn.addEventListener("click", function () {
+  menuNav.style.display = "flex";
+  closeMenuBtn.style.display = "inline-block";
+  openMenuBtn.style.display = "none";
+});
+
+closeMenuBtn.addEventListener("click", function () {
+  menuNav.style.display = "none";
+  closeMenuBtn.style.display = "none";
+  openMenuBtn.style.display = "block";
+});
