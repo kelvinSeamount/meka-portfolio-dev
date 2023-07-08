@@ -45,8 +45,10 @@ openMenuBtn.addEventListener("click", function () {
   openMenuBtn.style.display = "none";
 });
 
-closeMenuBtn.addEventListener("click", function () {
+const closebtn = function () {
   menuNav.style.display = "none";
   closeMenuBtn.style.display = "none";
   openMenuBtn.style.display = "block";
-});
+};
+
+closeMenuBtn.addEventListener("click", closebtn);
