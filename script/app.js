@@ -52,3 +52,16 @@ const closebtn = function () {
 };
 
 closeMenuBtn.addEventListener("click", closebtn);
+
+/*----TO-DISPLAY-DARK-MODE----*/
+const iconEl = document.querySelector(".icon-moon");
+
+iconEl.addEventListener("click", function () {
+  document.body.classList.toggle("light-mode");
+  if (document.body.classList.contains("light-mode")) {
+    iconEl.src = "./asset/sun.png";
+    /*document.getElementById("tags").style.color = "#fff";*/
+  } else {
+    iconEl.src = "./asset/moon.png";
+  }
+});

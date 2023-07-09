@@ -3,9 +3,9 @@
   --secondary-background: #61dafb;
   --tertiary-background: #1b2035;
   --primary-fontcolor: #ffffff;
-  --main-fontcolor: #f2f2f2;
   --hover-color: #42a5f5;
   --Form-color: #202d47;
+  --light--color: #f2f2f2;
 
   /*=======Container-Variables====*/
   --lg-container-width: 80%;
@@ -26,6 +26,13 @@
 
   /*=======Fonts-family-Variables====*/
   --fonts-nunito: "Nunito Sans", sans-serif;
+}
+
+.light-mode {
+  --primary-fontcolor: #1b2035;
+  --tertiary-background: #ffffff;
+  --primary-background: #f2f2f2;
+  --Form-color: #cde6fa;
 }
 
 /*=======General-Reset====*/
@@ -132,6 +139,7 @@ button {
 
 .icon-moon {
   width: 1.8rem;
+  cursor: pointer;
 }
 
 .logo-link {
@@ -251,7 +259,7 @@ button {
   padding: 1rem 2rem;
   border-radius: 1rem;
   background-color: var(--hover-color);
-  color: var(--main-fontcolor);
+  color: var(--primary-fontcolor);
   cursor: pointer;
   transition: var(--transition);
   font-weight: 400;
@@ -361,7 +369,7 @@ button {
 
 .social-contact li a {
   font-size: var(--fonts-paragraph);
-  color: var(--main-fontcolor);
+  color: var(--primary-fontcolor);
 }
 
 .form-contact {
@@ -383,7 +391,7 @@ input,
 textarea {
   width: 100%;
   padding: 1rem;
-  color: var(--main-fontcolor);
+  color: var(--primary-fontcolor);
   background-color: var(--Form-color);
 }
 
@@ -395,7 +403,7 @@ textarea {
 /*=============================FOOTER=STYLE===============================*/
 
 footer {
-  border-top: 1px solid var(--main-fontcolor);
+  border-top: 1px solid var(--primary-fontcolor);
   padding-top: 5rem;
   margin-bottom: 2rem;
 }
@@ -417,7 +425,7 @@ small {
 
 .social li a {
   font-size: var(--fonts-paragraph);
-  color: var(--main-fontcolor);
+  color: var(--primary-fontcolor);
 }
 
 /*=============KEYFRAME-ANIMATION=============*/
@@ -467,7 +475,7 @@ small {
     cursor: pointer;
     font-size: var(--fonts-sub-primary);
     background: transparent;
-    color: var(--main-fontcolor);
+    color: var(--primary-fontcolor);
   }
 
   nav button#close-menu-btn {
