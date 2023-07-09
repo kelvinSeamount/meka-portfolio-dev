@@ -65,3 +65,11 @@ iconEl.addEventListener("click", function () {
     iconEl.src = "./asset/moon.png";
   }
 });
+
+/*----TO-DISPLAY-MOUDE-EFFECT----*/
+const cursorBtn = document.querySelector(".cursor");
+const cursorBtn2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove", function (e) {
+  cursorBtn.style.cssText = cursorBtn2.style.cssText =
+    "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
