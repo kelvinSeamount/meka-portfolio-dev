@@ -8,7 +8,7 @@ document.addEventListener("scroll", function () {
 /*---------------TYPING-------------*/
 const typeEl = document.querySelector(".type");
 
-const words = ["Front-End", "Developer", "Based", "In", "Bremen", "Germany"];
+const words = ["Front-End Developer", "Based In", "Bremen Germany"];
 
 let count = 0;
 
