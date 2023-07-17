@@ -30,7 +30,7 @@ const displayType = function () {
     letterCount = 0;
     count++;
   }
-  setTimeout(displayType, 380);
+  setTimeout(displayType, 500);
 };
 displayType();
 
@@ -60,13 +60,12 @@ iconEl.addEventListener("click", function () {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
     iconEl.src = "./asset/sun.png";
-    /*document.getElementById("tags").style.color = "#fff";*/
   } else {
     iconEl.src = "./asset/moon.png";
   }
 });
 
-/*----TO-DISPLAY-MOUDE-EFFECT----*/
+/*----TO-DISPLAY-MOUSE-EFFECT----*/
 const cursorBtn = document.querySelector(".cursor");
 const cursorBtn2 = document.querySelector(".cursor2");
 document.addEventListener("mousemove", function (e) {

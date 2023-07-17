@@ -465,16 +465,6 @@ small {
   }
 }
 
-@keyframes NavMenu {
-  0% {
-    transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
-  }
-  100% {
-    transform: rotateZ(0) rotateX(0) scale(1);
-    opacity: 1;
-  }
-}
-
 /*=============MEDIA QUERIES(TABLETS)=============*/
 
 @media screen and (max-width: 1024px) {
@@ -549,6 +539,17 @@ small {
 
   .nav-menu li:nth-child(4) {
     animation-delay: 600ms;
+  }
+
+  /*=============KEY FRAME=============*/
+  @keyframes NavMenu {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
   }
 
   /*=============ABOUT=============*/
