@@ -494,7 +494,7 @@ small {
     color: var(--primary-fontcolor);
   }
 
-  nav button#close-menu-btn {
+  #close-menu-btn {
     display: none;
   }
 
@@ -506,6 +506,7 @@ small {
     flex-direction: column;
     gap: 0;
     width: 18rem;
+    display: none;
   }
 
   .nav-menu li {
